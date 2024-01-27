@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BFLAGS	Makefile	/^BFLAGS := -d$/;"	m
+BISON	Makefile	/^BISON := bison$/;"	m
+BUILD_DIR	Makefile	/^BUILD_DIR ?= $(TOP_DIR)\/build$/;"	m
+CC	Makefile	/^CC := clang$/;"	m
+CFLAGS	Makefile	/^CFLAGS := -Wall -std=c11$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $(INC_FLAGS) -MMD -MP$/;"	m
+CPP_MODE	Makefile	/^CPP_MODE := 1$/;"	m
+CXX	Makefile	/^CXX := clang++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS := -Wall -Wno-register -std=c++17$/;"	m
+DEBUG	Makefile	/^DEBUG ?= 1$/;"	m
+DEPS	Makefile	/^DEPS := $(OBJS:.o=.d)$/;"	m
+FB_EXT	Makefile	/^FB_EXT := .c$/;"	m
+FB_EXT	Makefile	/^FB_EXT := .cpp$/;"	m
+FB_SRCS	Makefile	/^FB_SRCS := $(patsubst $(SRC_DIR)\/%.l, $(BUILD_DIR)\/%.lex$(FB_EXT), $(shell find $(SRC_DIR) -name "*.l"))$/;"	m
+FFLAGS	Makefile	/^FFLAGS :=$/;"	m
+FLEX	Makefile	/^FLEX := flex$/;"	m
+INC_DIR	Makefile	/^INC_DIR ?= $(CDE_INCLUDE_PATH)$/;"	m
+INC_DIRS	Makefile	/^INC_DIRS := $(shell find $(SRC_DIR) -type d)$/;"	m
+INC_FLAGS	Makefile	/^INC_FLAGS := $(addprefix -I, $(INC_DIRS))$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS :=$/;"	m
+LIB_DIR	Makefile	/^LIB_DIR ?= $(CDE_LIBRARY_PATH)\/native$/;"	m
+OBJS	Makefile	/^OBJS := $(patsubst $(BUILD_DIR)\/%.c, $(BUILD_DIR)\/%.c.o, $(OBJS))$/;"	m
+OBJS	Makefile	/^OBJS := $(patsubst $(BUILD_DIR)\/%.cc, $(BUILD_DIR)\/%.cc.o, $(OBJS))$/;"	m
+OBJS	Makefile	/^OBJS := $(patsubst $(BUILD_DIR)\/%.cpp, $(BUILD_DIR)\/%.cpp.o, $(OBJS))$/;"	m
+OBJS	Makefile	/^OBJS := $(patsubst $(SRC_DIR)\/%.c, $(BUILD_DIR)\/%.c.o, $(SRCS))$/;"	m
+OBJS	Makefile	/^OBJS := $(patsubst $(SRC_DIR)\/%.cc, $(BUILD_DIR)\/%.cc.o, $(OBJS))$/;"	m
+OBJS	Makefile	/^OBJS := $(patsubst $(SRC_DIR)\/%.cpp, $(BUILD_DIR)\/%.cpp.o, $(OBJS))$/;"	m
+SRCS	Makefile	/^SRCS := $(FB_SRCS) $(shell find $(SRC_DIR) -name "*.c" -or -name "*.cpp" -or -name "*.cc")$/;"	m
+SRC_DIR	Makefile	/^SRC_DIR := $(TOP_DIR)\/src$/;"	m
+TARGET_EXEC	Makefile	/^TARGET_EXEC := compiler$/;"	m
+TOP_DIR	Makefile	/^TOP_DIR := $(shell pwd)$/;"	m
+c_recipe	Makefile	/^define c_recipe$/;"	m
+cxx_recipe	Makefile	/^define cxx_recipe$/;"	m
+main	src/main.cpp	/^int main(int argc, const char *argv[]) {$/;"	f
