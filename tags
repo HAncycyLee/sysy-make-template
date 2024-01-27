@@ -37,4 +37,5 @@ TARGET_EXEC	Makefile	/^TARGET_EXEC := compiler$/;"	m
 TOP_DIR	Makefile	/^TOP_DIR := $(shell pwd)$/;"	m
 c_recipe	Makefile	/^define c_recipe$/;"	m
 cxx_recipe	Makefile	/^define cxx_recipe$/;"	m
+main	debug/Test.c	/^int main() {$/;"	f
 main	src/main.cpp	/^int main(int argc, const char *argv[]) {$/;"	f
