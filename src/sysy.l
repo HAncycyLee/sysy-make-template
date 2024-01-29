@@ -4,8 +4,10 @@
 
 %{
 
+#include <iostream>
 #include <cstdlib>
 #include <string>
+#include "../include/AST.h"
 
 // 因为 Flex 会用到 Bison 中关于 token 的定义
 // 所以需要 include Bison 生成的头文件
@@ -46,4 +48,6 @@ Hexadecimal   0[xX][0-9a-fA-F]+
 .               { return yytext[0]; }
 
 %%
-
+void lexerror(const char *s) {
+	cerr << "lex error: " << s << endl;
+		}
