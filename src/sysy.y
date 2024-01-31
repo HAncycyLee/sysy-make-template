@@ -1,7 +1,7 @@
 %code requires {
   #include <memory>
   #include <string>
-  #include "../include/AST.h"
+  #include "AST.h"
 }
 
 %{
@@ -9,7 +9,7 @@
 #include <iostream>
 #include <memory>
 #include <string>
-#include "../include/AST.h"
+#include "AST.h"
 #include <cstdio>
 #include <cstring>
 #include <vector>
